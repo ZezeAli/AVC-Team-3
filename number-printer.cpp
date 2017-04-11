@@ -4,3 +4,4 @@ int main (){
   printf("%d", number );
   return 0;
 }
+// I'm still gay
