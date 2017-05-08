@@ -20,9 +20,10 @@ int main() {
 				midArray[i] = 0;
 			}
 		}
-		printf("Counted %d white pixels", whiteCount);
+		printf("Counted %d white pixels\n", whiteCount);
 		printf("Calculated error of: %d\n", pError);
 		set_motor(1, cruiseSpeed + (pError * errScale)); //Right wheel
 		set_motor(2, cruiseSpeed - (pError * errScale)); //Left wheel
 	}
+	return 0;
 }
