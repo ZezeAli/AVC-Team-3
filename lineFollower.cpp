@@ -5,10 +5,10 @@
 int main() {
 	init();
 	int cruiseSpeed = 80;
-	double errScale = 1; // Not calibrated yet. Requires trial and error to find.
+	double errScale = 175/646; // Not calibrated yet. Requires trial and error to find.
 	while (true) {
 		int midArray [64] = { };
-		int pError = 0;
+		double pError = 0;
 		int whiteCount = 0; // Not used yet, but should count properly
 		take_picture();
 		for (int i = 0; i < 64; i++) { // sizeof(midArray) returns the size of the whole array in bytes, divided by the size of one element in bytes = number of elements
@@ -22,8 +22,8 @@ int main() {
 		}
 		printf("Counted %d white pixels\n", whiteCount);
 		printf("Calculated error of: %d\n", pError);
-		set_motor(1, cruiseSpeed + (pError * errScale)); //Right wheel
-		set_motor(2, cruiseSpeed - (pError * errScale)); //Left wheel
+		set_motor(1, (int)(cruiseSpeed + (pError * errScale))); //Right wheel
+		set_motor(2, (int)(cruiseSpeed - (pError * errScale))); //Left wheel
 	}
 	return 0;
 }
