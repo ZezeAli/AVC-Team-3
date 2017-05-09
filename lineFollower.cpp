@@ -21,7 +21,7 @@ int main() {
 			}
 		}
 		printf("Counted %d white pixels\n", whiteCount);
-		printf("Calculated error of: %d\n", pError);
+		printf("Calculated error of: %f\n", pError);
 		set_motor(1, (int)(cruiseSpeed + (pError * errScale))); //Right wheel
 		set_motor(2, (int)(cruiseSpeed - (pError * errScale))); //Left wheel
 	}
