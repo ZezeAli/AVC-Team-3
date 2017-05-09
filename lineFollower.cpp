@@ -4,7 +4,7 @@
 
 int main() {
 	init();
-	int cruiseSpeed = 80;
+	int cruiseSpeed = 20;
 	double errScale = 175/646; // Not calibrated yet. Requires trial and error to find.
 	while (true) {
 		int midArray [64] = { };
