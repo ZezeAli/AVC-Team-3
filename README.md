@@ -4,7 +4,7 @@ Used for the AVC (Autonomous Vehicle Challenge) during the second half of trimes
 
 # Task List for Week 3
 
-** Please add yur personal tasks guys** Progress report due at the end of week 3 and our goals are to have quad one and two completed
+** Please add your personal tasks guys** Progress report due at the end of week 3 (Monday 22nd) and our goals are to have quad one and two completed
 
 --as outline from our team plan 
 
