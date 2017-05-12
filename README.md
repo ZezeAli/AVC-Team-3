@@ -2,6 +2,9 @@
 C++ code for controlling Raspberry Pi 2s in ENGR101 during 2017.
 Used for the AVC (Autonomous Vehicle Challenge) during the second half of trimester 1.
 
+Here's a link to the project outline for reference 
+https://github.com/ZezeAli/AVC-Team-3/blob/Photos-and-Progress/AVC.pdf
+
 # Task List for Week 3
 
 ** Please add your personal tasks guys** Progress report due at the end of week 3 (Monday 22nd) and our goals are to have quad one and two completed
