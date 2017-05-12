@@ -7,7 +7,7 @@ Quad 1+2
 
 Progress Report due at end of week
 
-(Outline copied from our team Plan)
+-----(Outline copied from our team Plan)
 
 Jordyn, Zeze & Thobie: Write Methods section
 
