@@ -8,19 +8,19 @@ Used for the AVC (Autonomous Vehicle Challenge) during the second half of trimes
 
 --as outline from our team plan 
 
-Jordyn, Zeze & Thobie: Write Methods section
+- [] Jordyn, Zeze & Thobie: Write Methods section
 
-Ethan & Gaby: Robot hardware 
+- [] Ethan & Gaby: Robot hardware 
 
-Ethan & Gaby/Jacob & Armaan: Figure out how to open gate
+- [] Ethan & Gaby/Jacob & Armaan: Figure out how to open gate
 
-Jacob & Armaan: Refine quadrant 2 code
+- [] Jacob & Armaan: Refine quadrant 2 code
 
 --suggested by GP
 
-Everyone upload photos, design files (CAD),and notes on work they've done to progress report. I suggested we all work on it on our Github Wiki  https://github.com/ZezeAli/AVC-Team-3/wiki/Progress-Report
+- [] Everyone upload photos, design files (CAD),and notes on work they've done to progress report. I suggested we all work on it on our Github Wiki  https://github.com/ZezeAli/AVC-Team-3/wiki/Progress-Report
 
-Tuesday Lab: Gaby and Ethan complete camera and battery mount so bot is safe to drive and code can be tested  
+- [] Tuesday Lab: Gaby and Ethan complete camera and battery mount so bot is safe to drive and code can be tested  
 
 Jacob +Armaan's Code for Quad 1 : https://github.com/ZezeAli/AVC-Team-3/blob/master/lineFollower.cpp
 
