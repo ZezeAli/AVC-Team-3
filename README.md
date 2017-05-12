@@ -10,11 +10,11 @@ Used for the AVC (Autonomous Vehicle Challenge) during the second half of trimes
 
 - [ ] Ethan & Gaby: Robot hardware: Camera mount and Battery holder, reposition hardware. Wire sesnors. 
 
-- [ ] Ethan & Gaby/Jacob & Armaan: Figure out how to open gate
-
 - [ ] Jacob & Armaan: Refine quadrant 1 + 2 code 
 
 - [ ] Everyone upload photos, design files (CAD),and notes on work they've done to progress report. I suggested we all work on it on our Github Wiki https://github.com/ZezeAli/AVC-Team-3/wiki/Summary-of-What-everyone-is-doing.-*Please-Update!*
+
+- [ ] Ethan & Gaby/Jacob & Armaan: Figure out how to open gate (If time allows) 
 
 
 Jacob +Armaan's Code for Quad 1 : https://github.com/ZezeAli/AVC-Team-3/blob/master/lineFollower.cpp
