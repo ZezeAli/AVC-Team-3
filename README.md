@@ -18,7 +18,7 @@ Used for the AVC (Autonomous Vehicle Challenge) during the second half of trimes
 
 --suggested by GP
 
-- [ ] Everyone upload photos, design files (CAD),and notes on work they've done to progress report. I suggested we all work on it on our Github Wiki:   https://github.com/ZezeAli/AVC-Team-3/wiki/Progress-Report
+- [ ] Everyone upload photos, design files (CAD),and notes on work they've done to progress report. I suggested we all work on it on our Github Wiki https://github.com/ZezeAli/AVC-Team-3/wiki/Summary-of-What-everyone-is-doing.-*Please-Update!*
 
 - [ ] Tuesday Lab: Gaby and Ethan complete camera and battery mount so bot is safe to drive and code can be tested  
 
