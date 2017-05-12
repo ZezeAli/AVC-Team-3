@@ -22,4 +22,6 @@ Everyone upload photos, design files (CAD),and notes on work they've done to pro
 
 Tuesday Lab: Gaby and Ethan complete camera and battery mount so bot is safe to drive and code can be tested  
 
+Jacob +Armaan's Code for Quad 1 : https://github.com/ZezeAli/AVC-Team-3/blob/master/lineFollower.cpp
+
 
