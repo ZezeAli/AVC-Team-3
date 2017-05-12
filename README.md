@@ -6,9 +6,9 @@ Used for the AVC (Autonomous Vehicle Challenge) during the second half of trimes
 
 ** Please add your personal tasks guys** Progress report due at the end of week 3 (Monday 22nd) and our goals are to have quad one and two completed
 
-- [ ] Jordyn, Zeze & Thobie: Begin pogress report, Abstract, Intro and Background as well as method (Whatever is possible) https://github.com/ZezeAli/AVC-Team-3/wiki/Progress-Report
+- [ ] Jordyn, Zeze & Thobie: Begin progress report, Abstract, Intro and Background as well as method (Whatever is possible) https://github.com/ZezeAli/AVC-Team-3/wiki/Progress-Report
 
-- [ ] Ethan & Gaby: Robot hardware: Camera mount and Battery holder, reposition hardware. Wire sesnors. 
+- [ ] Ethan & Gaby: Robot hardware: Camera mount and Battery holder, reposition hardware. Wire sensors. 
 
 - [ ] Jacob & Armaan: Refine quadrant 1 + 2 code 
 
