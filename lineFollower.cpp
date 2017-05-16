@@ -27,3 +27,6 @@ int main() {
 	}
 	return 0;
 }
+
+// should we add if/ else statement for what happens if no white pix. Back up slightly off centre. For now? - GP
+// Third Quad note: calculate diff signal: error of this line minus eroor of another line. error_diff*kd . Instead of error of seperate frames 
