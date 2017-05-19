@@ -26,3 +26,13 @@ int main() {
 
 // should we add if/ else statement for what happens if no white pix. Back up slightly off centre. For now? - GP
 // Third Quad note: calculate diff signal: error of this line minus eroor of another line. error_diff*kd . Instead of error of seperate frames 
+//Taken from lecture slides
+//int main(){
+//float kd = 0.5;
+//int derivative_signal = 0;
+//int error; //frame loop calculating error from middle line
+//frame loop calculating future error from 180 line
+//error_diff = future_error-error;
+//derivative_signal = error_diff*kd;
+//set motor speeds from sum of PID signals
+//return 0;}
