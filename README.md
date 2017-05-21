@@ -26,6 +26,7 @@ Jacob +Armaan's Code for Quad 1 : https://github.com/ZezeAli/AVC-Team-3/blob/mas
 (Restrictions: 121 Test on Friday)
 
 - [ ] Progress reports due Monday 22nd 12am- Everyone 
-- [ ] Test networking code to open gate - Gaby
+- [ ] Test networking code to open gate - Gaby, Jacob, Armaan and Ethan 
+- [ ] Hardware: Ethan to test sesnors and work out if they are well placed for quad 3
 - [ ] Begin work on Quad 3 (Implimenting "ID' of "PID') - Everyone
 - [ ] Start some debugging 
