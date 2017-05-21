@@ -22,4 +22,10 @@ https://github.com/ZezeAli/AVC-Team-3/blob/Photos-and-Progress/AVC.pdf
 
 Jacob +Armaan's Code for Quad 1 : https://github.com/ZezeAli/AVC-Team-3/blob/master/lineFollower.cpp
 
+# Task List for Week 4
+(Restrictions: 121 Test on Friday)
 
+- [ ] Progress reports due Monday 22nd 12pm- Everyone 
+- [ ] Test networking code to open gate - Gaby
+- [ ] Begin work on Quad 3 (Implimenting "ID' of "PID') - Everyone
+- [ ] Start some debugging 
