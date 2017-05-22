@@ -18,6 +18,8 @@ int main() {
 	bool q3 = true;		// Navigating 90 degree lines and intersections
 	bool maze = true;	// Navigating maze using infrared sensors and hugging right wall
 	
+	// shouldn't these be set to false? Gaby
+	
 	while (gate) {
 		gate = false;
 	}
