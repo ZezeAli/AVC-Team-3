@@ -35,9 +35,9 @@ Meeting Tuesday 2pm (Lab Time)
 
 - [ ] Monday: Test networking code to open gate - Gaby, Jacob, Armaan and Ethan https://github.com/ZezeAli/AVC-Team-3/blob/master/OpenGate.cpp
 
-- [ ] Tuesday: Hardware: Ethan to test sesnors and work out if they are well placed for quad 4
+- [ ] Tuesday: Hardware: 
 
 - [ ] Tuesday: Quad 2 Successful! Debugging and maybe we can make it faster?- Jacob and Armaan
 
-- [ ] Tuesday: Begin work on Quad 3 (Implimenting "ID' of "PID') - Everyone
+- [ ] Tuesday: Begin work on Quad 3 (Implimenting 'D' of "PID') - Everyone
 
