@@ -10,16 +10,17 @@ int main() {
 	double pScale = 0.7;
 	double pError = 0;
 	double p = 0;
+	//double kd = ?; // derivative value
+	//int  current_error;
+	//int previous_error;
+	//int derivative_signal = 0;
 	int right_motor = 0;
 	int left_motor = 0;
-	
 	bool gate = true;	// If the gate is closed or not
 	bool q2 = true;		// Following the straight and curvy lines
 	bool q3 = true;		// Navigating 90 degree lines and intersections
 	bool maze = true;	// Navigating maze using infrared sensors and hugging right wall
-	
-	// shouldn't these be set to false? Gaby
-	
+
 	while (gate) {
 		gate = false;
 	}
@@ -73,13 +74,4 @@ int main() {
 }
 
 // Third Quad note: calculate diff signal: error of this line minus eroor of another line. error_diff*kd . Instead of error of seperate frames 
-//Taken from lecture slides
-//int main(){
-//float kd = 0.5;
-//int derivative_signal = 0;
-//int error; //frame loop calculating error from middle line
-//frame loop calculating future error from 180 line
-//error_diff = future_error-error;
-//derivative_signal = error_diff*kd;
-//set motor speeds from sum of PID signals
-//return 0;}
+
