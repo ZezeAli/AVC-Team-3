@@ -31,9 +31,9 @@ Meeting Tuesday 2pm (Lab Time)
 
 - [ ] Progress reports due Monday 22nd 12am- Everyone 
 
-- [ ] Monday's meeting: debugging/testing. Results for our progreports? - Everyone 
+- [x] Monday's meeting: debugging/testing. Results for our progreports? - Everyone 
 
-- [ ] Monday: Test networking code to open gate - Gaby, Jacob, Armaan and Ethan https://github.com/ZezeAli/AVC-Team-3/blob/master/OpenGate.cpp
+- [x] Monday: Test networking code to open gate - Gaby, Jacob, Armaan and Ethan https://github.com/ZezeAli/AVC-Team-3/blob/master/OpenGate.cpp
 
 - [ ] Tuesday: Hardware: 
 
