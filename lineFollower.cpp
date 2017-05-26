@@ -62,19 +62,56 @@ int main() {
 		
 		printf("====================================\n");
 		
-		// Check if quadrant is over or if line can't be seen
-		/*if (whiteCount > 315) { // Not tested yet
+		// Assume robot has gotten up to the second 4 way intersection, halfway through q3
+		
+		if (whiteCount < 5) { // Not tested yet
 			q2 = false;
-		} else if (whiteCount == 0) {
-			set_motor(1, cruiseSpeed);
-			set_motor(2, -cruiseSpeed);
-			printf("Moving backwards for 1 second\n");
-			sleep1(1, 0);
-		}*/
+		}
 	}
 	
 	while (q3) {
-		q3 = false;
+		pError = 0;
+		whiteCount = 0;
+		take_picture();
+		for (int i = 0; i < 320; i++) {
+			if (get_pixel(120, i, 3) >= 60) {
+				pError += i-159; // The centre of the row is index 159 & 160. This maps index 159 as 0
+				whiteCount++;
+			}
+		}
+		
+		p = (pError / 320) * pScale; // Dividing by 320 made it easier to calibrate pScale by hand
+		
+		printf("No. white pixels: %d\n", whiteCount);
+		printf("Calculated error of: %f\n", pError);
+		printf("Scaled error: %f\n", p);
+		
+		right_motor = cruiseSpeed + (p);
+		left_motor = cruiseSpeed - (p);
+		
+		printf("Setting left motor to: %d\n", left_motor);
+		printf("Setting right motor to: %d\n", right_motor);
+		set_motor(1, -left_motor);
+		set_motor(2, right_motor);
+		
+		printf("====================================\n");
+		if (p > 25) {
+			turnRight();
+		} else if (pError < -25) {
+			turnLeft();
+		}
+	}
+	int turnRight() {
+		set_motor(1, 40);
+		set_motor(2, 0);
+		printf("Turning Right");
+		sleep1(1, 0);
+	}
+	int turnLeft() {
+		set_motor(1, 0);
+		set_motor(2, 40);
+		printf("Turning Left");
+		sleep1(1, 0);
 	}
 	
 	while (maze) {
