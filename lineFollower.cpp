@@ -63,14 +63,14 @@ int main() {
 		printf("====================================\n");
 		
 		// Check if quadrant is over or if line can't be seen
-		if (whiteCount > 315) { // Not tested yet
+		/*if (whiteCount > 315) { // Not tested yet
 			q2 = false;
 		} else if (whiteCount == 0) {
 			set_motor(1, cruiseSpeed);
 			set_motor(2, -cruiseSpeed);
 			printf("Moving backwards for 1 second\n");
 			sleep1(1, 0);
-		}
+		}*/
 	}
 	
 	while (q3) {
