@@ -2,6 +2,19 @@
 #include <time.h>
 #include "E101.h"
 
+int turnRight() {
+	set_motor(1, 40);
+	set_motor(2, 0);
+	printf("Turning Right");
+	sleep1(1, 0);
+}
+int turnLeft() {
+	set_motor(1, 0);
+	set_motor(2, 40);
+	printf("Turning Left");
+	sleep1(1, 0);
+}
+
 int main() {
 	init();
 	
@@ -100,18 +113,6 @@ int main() {
 		} else if (pError < -25) {
 			turnLeft();
 		}
-	}
-	int turnRight() {
-		set_motor(1, 40);
-		set_motor(2, 0);
-		printf("Turning Right");
-		sleep1(1, 0);
-	}
-	int turnLeft() {
-		set_motor(1, 0);
-		set_motor(2, 40);
-		printf("Turning Left");
-		sleep1(1, 0);
 	}
 	
 	while (maze) {
