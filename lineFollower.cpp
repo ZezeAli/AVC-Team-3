@@ -5,13 +5,13 @@
 int turnRight() {
 	set_motor(1, 40);
 	set_motor(2, 0);
-	printf("Turning Right");
+	printf("Turning Right\n");
 	sleep1(1, 0);
 }
 int turnLeft() {
 	set_motor(1, 0);
 	set_motor(2, 40);
-	printf("Turning Left");
+	printf("Turning Left\n");
 	sleep1(1, 0);
 }
 
@@ -20,6 +20,8 @@ int main() {
 	
 	int cruiseSpeed = 40;
 	int whiteCount = 0;
+	int whiteCountLeft = 0;
+	int whiteCountRight = 0;
 	double pScale = 0.7;
 	double pError = 0;
 	double p = 0;
@@ -31,7 +33,7 @@ int main() {
 	int left_motor = 0;
 	bool gate = true;	// If the gate is closed or not
 	bool q2 = true;		// Following the straight and curvy lines
-	bool q3 = true;		// Navigating 90 degree lines and intersections
+	bool q3 = false;		// Navigating 90 degree lines and intersections
 	bool maze = true;	// Navigating maze using infrared sensors and hugging right wall
 
 	while (gate) {
@@ -58,6 +60,11 @@ int main() {
 				pError += i-159; // The centre of the row is index 159 & 160. This maps index 159 as 0
 				whiteCount++;
 			}
+			if (i < 160) {
+				whiteCountLeft++;	
+			} else {
+				whiteCountRight++;
+			}
 		}
 		p = (pError / 320) * pScale; // Dividing by 320 made it easier to calibrate pScale by hand
 		
@@ -79,39 +86,14 @@ int main() {
 		
 		if (whiteCount < 5) { // Not tested yet
 			q2 = false;
+			q3 = true;
 		}
-	}
-	
-	while (q3) {
-		pError = 0;
-		whiteCount = 0;
-		take_picture();
-		for (int i = 0; i < 320; i++) {
-			if (get_pixel(120, i, 3) >= 60) {
-				pError += i-159; // The centre of the row is index 159 & 160. This maps index 159 as 0
-				whiteCount++;
+		if (q3) {
+			if (whiteCountLeft < 120) {
+				turnRight();
+			} else if (whiteCountRight > 120) {
+				turnLeft();
 			}
-		}
-		
-		p = (pError / 320) * pScale; // Dividing by 320 made it easier to calibrate pScale by hand
-		
-		printf("No. white pixels: %d\n", whiteCount);
-		printf("Calculated error of: %f\n", pError);
-		printf("Scaled error: %f\n", p);
-		
-		right_motor = cruiseSpeed + (p);
-		left_motor = cruiseSpeed - (p);
-		
-		printf("Setting left motor to: %d\n", left_motor);
-		printf("Setting right motor to: %d\n", right_motor);
-		set_motor(1, -left_motor);
-		set_motor(2, right_motor);
-		
-		printf("====================================\n");
-		if (p > 25) {
-			turnRight();
-		} else if (pError < -25) {
-			turnLeft();
 		}
 	}
 	
