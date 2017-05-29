@@ -3,16 +3,16 @@
 #include "E101.h"
 
 int turnRight() {
-	set_motor(1, 40);
-	set_motor(2, 0);
+	set_motor(1, 0);
+	set_motor(2, 70);
 	printf("Turning Right\n");
 	sleep1(1, 0);
 }
 int turnLeft() {
-	set_motor(1, 0);
-	set_motor(2, 40);
+	set_motor(1, -70);
+	set_motor(2, 0);
 	printf("Turning Left\n");
-	sleep1(1, 0);
+	sleep1(1, 125000);
 }
 
 int main() {
