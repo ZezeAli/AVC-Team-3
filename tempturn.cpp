@@ -3,6 +3,7 @@
 #include "E101.h"
 
 int main() {
+  init();
   set_motor(1, 60);
   set_motor(2, 0);
   
