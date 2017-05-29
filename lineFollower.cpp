@@ -84,7 +84,7 @@ int main() {
 		
 		// Assume robot has gotten up to the second 4 way intersection, halfway through q3
 		
-		if (whiteCount > 310) { // Not tested yet
+		if (whiteCount < 5) { // Not tested yet
 			q3 = true;
 			turnLeft();
 		}
