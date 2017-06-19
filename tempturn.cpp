@@ -10,7 +10,7 @@ int main() {
   set_motor(1, -70);
   // Left Wheel
   set_motor(2, 0);
-  sleep1(1, 125000);
+  sleep1(1, 135000);
   
   /*
   //Right Turn
